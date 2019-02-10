@@ -21,4 +21,4 @@ production:
   pool: 5
   database: taskApp_production
   username: taskApp
-  password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
+  password: <%= ENV['TASKAPP_DATABASE_PASSWORD'] %>
