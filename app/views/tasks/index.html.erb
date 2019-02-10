@@ -5,16 +5,18 @@
     <thead>
       <tr>
         <th>id</th>
-        <th>タイトル</th>
-        <th>メッセージ</th>
+        <th>タスク</th>
+        <th>ステータス</th>
+
       </tr>
     </thead>
     <tbody>
       <% @tasks.each do |task| %>
         <tr>
           <td><%= link_to task.id, task %></td>
-          <td><%= task.title %></td>
+      
           <td><%= task.content %></td>
+              <td><%= task.title %></td>
         </tr>
       <% end %>
     </tbody>
